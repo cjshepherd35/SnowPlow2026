@@ -92,6 +92,7 @@ from Robot import *
 
 if __name__ == "__main__":
     rb = Robot()
+    rb.wait_for_pub()
     for i in range(10):
         rb.set_speed(10)
-    rb.wait_for_pub()
+    
